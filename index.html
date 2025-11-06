@@ -143,17 +143,6 @@
   </div>
 </section>
 
-<section class="hero real-robot-experiment">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="real-robot-experiment" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/real-robot-experiment.mp4"
-                type="video/mp4">
-      </video>
-    </div>
-  </div>
-</section>
-
 <section class="section">
   <div class="container is-max-desktop">
 
@@ -215,15 +204,20 @@
     <!--/ Cover figure. -->
 
     <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
+        <p>
+          An introduction video. Audio will be played when the video is played.
+        </p>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <video id="publication-video" controls height="100%">
+            <source src="./static/videos/freecompress-demo-v2.mp4"
+                    type="video/mp4">
+          </video>
         </div>
       </div>
-    </div> -->
+    </div>
     <!--/ Paper video. -->
   </div>
 </section>
@@ -263,6 +257,28 @@
       </div>
     </div>
     <!--/ Animation. -->
+
+    <!-- Real robot experiment. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Real World Experiments</h2>
+        <div class="content has-text-justified">
+          <p>
+            On the LEAP Hand, our method achieved an average success rate 
+            of 87.5% across 40 trials, while on the ShadowHand it achieved 
+            an average success rate of 85.0%. 
+          </p>
+        </div>
+        <div class="hero-body">
+          <video id="real-robot-experiment" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/real-robot-experiment.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <br/>
+      </div>
+    </div>
+    <!--/ Real robot experiment. -->
 
   </div>
 </section>
