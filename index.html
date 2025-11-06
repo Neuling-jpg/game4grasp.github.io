@@ -197,14 +197,19 @@
 
     <!-- Cover figure. -->
     <div class="columns is-centered has-text-centered">
-      <div class="publication-figure">
-        <img src="./static/images/method.jpg"
-              alt="Cover figure"/>
-        <p class="figure-caption">
-          We explicitly captures and leverages 
-          the adversarial object motion in grasp generation 
-          by formulating the problem as a two-player game.
-        </p>
+      <div class="column is-four-fifths">
+        <div class="publication-figure">
+          <img src="./static/images/method.jpg"
+               alt="Cover figure"/>
+          <p class="figure-caption">
+            Pipeline overview: Our method relies on a firm grasp condition that once satisfied, 
+            any non-zero object transformation will result in object-robot penetration. 
+            The problem is formulated as a two-player game. 
+            Player 1 seeks to satisfy the firm grasp condition, while Player 2 attempts to break it. 
+            The two players compete specifically on this condition, whereas all other constraints 
+            are isolated within their respective optimization problems.
+          </p>
+        </div>
       </div>
     </div>
     <!--/ Cover figure. -->
