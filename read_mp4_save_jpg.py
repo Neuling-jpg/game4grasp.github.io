@@ -18,7 +18,7 @@ while True:
         break
 
     # 保存帧为 jpg 图片
-    save_path = os.path.join(output_folder, f"frame_{frame_count:06d}.jpg")
+    save_path = os.path.join(output_folder, f"{frame_count:06d}.jpg")
     cv2.imwrite(save_path, frame)
     
     frame_count += 1
