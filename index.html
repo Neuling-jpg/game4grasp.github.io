@@ -227,31 +227,40 @@
 
 <section class="hero is-light is-small">
   <div class="hero-body">
+    <h2 class="title is-3">Success Rate Comparison</h2>
+    <div class="content has-text-justified">
+      <p>
+        We conduct experiments on the full CMapDataset that contains 58 test objects across 3 robot platforms
+         (Allegro, Barrett, and ShadowHand). 
+        On average, our approach achieves the grasp success rate of 75.78%, which is 7.51% higher than D(R,O)
+         and 25.56% higher than optimization-based method without game mechanism.
+        Below are the detailed object-wise comparison results on each robot platform.
+      </p>
+    </div>
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
-          <img src="./static/images/method.jpg" alt="Cover figure"/>
-        </div>
-        <div class="item item-chair-tp">
-          <img src="./static/images/method.jpg" alt="Cover figure"/>
+          <img src="./static/images/object-wise-compare/allegro-dro.svg" alt="Ours vs. D(R,O) on Allegro"/>
         </div>
         <div class="item item-shiba">
-          <img src="./static/images/method.jpg" alt="Cover figure"/>
+          <img src="./static/images/object-wise-compare/barrett-dro.svg" alt="Ours vs. D(R,O) on Barrett"/>
         </div>
         <div class="item item-fullbody">
-          <img src="./static/images/method.jpg" alt="Cover figure"/>
+          <img src="./static/images/object-wise-compare/shadowhand-dro.svg" alt="Ours vs. D(R,O) on ShadowHand"/>
+        </div>
+        <div class="item item-chair-tp">
+          <img src="./static/images/object-wise-compare/allegro-opt.svg" alt="Ours vs. Optimization on Allegro"/>
         </div>
         <div class="item item-blueshirt">
-          <img src="./static/images/method.jpg" alt="Cover figure"/>
+          <img src="./static/images/object-wise-compare/barrett-opt.svg" alt="Ours vs. Optimization on Barrett"/>
         </div>
         <div class="item item-mask">
-          <img src="./static/images/method.jpg" alt="Cover figure"/>
+          <img src="./static/images/object-wise-compare/shadowhand-opt.svg" alt="Ours vs. Optimization on ShadowHand"/>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
