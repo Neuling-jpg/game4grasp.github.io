@@ -42,128 +42,115 @@
 </head>
 <body>
 
-<section class="hero">
+<section class="hero is-link is-fullheight video" style="overflow: hidden; position:relative;">
+  <div class="hero-video" style="height: 100%; width: 177.77777778vh; min-width: 100%;min-height: 56.25vw;">
+    <video playsinline autoplay muted loop>
+      <source src=" ./static/videos/cover-video.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="overlay"></div>
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head is-hidden-mobile">
+    <header class="navbar">
+      <div class="container is-size-5">
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item pl-4 pr-4" href="./static/videos/Game4Grasp_ICRA26.pdf">
+              <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+              </span>
+              <span>Paper</span>
+            </a>
+            <a class="navbar-item  pl-4 pr-4" href="https://neuling-jpg.github.io/game4grasp.github.io/">
+              <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+              </span>
+              <span>arXiv</span> </a>
+            <!-- <a href="https://youtu.be/4Bp0q3xHTxE" class="navbar-item  pl-4 pr-4">
+              <span class="icon" style="margin-right:5px;">
+                <img src="./static/images/youtube.svg" alt="Youtube" />
+              </span>
+              <span>Video</span> </a> -->
+            <span class="navbar-item  pl-4 pr-4">
+              <a href="https://neuling-jpg.github.io/game4grasp.github.io/" class="button is-inverted is-rounded is-large">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code (Coming Soon)</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Hero content: will be in the middle -->
   <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Adversarial Game-Theoretic Algorithm for Dexterous Grasp Synthesis</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://neuling-jpg.github.io/yu.github.io/">Yu Chen</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://bottle101.github.io/">Botao He</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://yueminm.github.io/">Yuemin Mao</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://arthurjakobsson.com/">Arthur Jakobsson</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.linkedin.com/in/jeffke">Jeffrey Ke</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://robotics.umd.edu/clark/faculty/350/Yiannis-Aloimonos">Yiannis Aloimonos</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.gshi.me/">Guanya Shi</a><sup>1</sup>
-            </span>
-            <span class="author-block">
-              <a href="https://en.wikipedia.org/wiki/Howie_Choset">Howie Choset</a><sup>1</sup>
-            </span>
-            <span class="author-block">
-              <a href="https://jiayuanm.com/">Jiayuan Mao</a><sup>3</sup>
-            </span>
-            <span class="author-block">
-              <a href="https://ichnow.ski/">Jeffrey Ichnowski</a><sup>1</sup>
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>CMU</span>
-            <span class="author-block"><sup>2</sup>University of Maryland</span>
-            <span class="author-block"><sup>3</sup>Amazon FAR</span>
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="./static/videos/Game4Grasp_ICRA26.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://neuling-jpg.github.io/game4grasp.github.io/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://neuling-jpg.github.io/game4grasp.github.io/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code (Coming Soon)</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a> -->
-            </div>
-          </div>
-        </div>
+    <div class="container has-text-centered">
+      <h1 class="title is-1 publication-title" style="font-size: 5rem;">
+        Adversarial Game-Theoretic Algorithm
+      </h1>
+      <h1 class="title is-1 publication-title" style="font-size: 5rem;">
+        for Dexterous Grasp Synthesis
+      </h1>
+      <div class="is-size-4 publication-authors">
+        <span class="author-block">
+          <a href="https://neuling-jpg.github.io/yu.github.io/">Yu Chen</a><sup>1</sup>,</span>
+        <span class="author-block">
+          <a href="https://bottle101.github.io/">Botao He</a><sup>2</sup>,</span>
+        <span class="author-block">
+          <a href="https://yueminm.github.io/">Yuemin Mao</a><sup>1</sup>,
+        </span>
+        <span class="author-block">
+          <a href="https://arthurjakobsson.com/">Arthur Jakobsson</a><sup>1</sup>,
+        </span>
+        <span class="author-block">
+          <a href="https://www.linkedin.com/in/jeffke">Jeffrey Ke</a><sup>1</sup>,
+        </span>
+        </span>
+      </div>
+      <div class="is-size-4 publication-authors">
+        <span class="author-block">
+          <a href="https://robotics.umd.edu/clark/faculty/350/Yiannis-Aloimonos">Yiannis Aloimonos</a><sup>2</sup>,
+        </span>
+        <span class="author-block">
+          <a href="https://www.gshi.me/">Guanya Shi</a><sup>1</sup>,
+        </span>
+        <span class="author-block">
+          <a href="https://en.wikipedia.org/wiki/Howie_Choset">Howie Choset</a><sup>1</sup>,
+        </span>
+        <span class="author-block">
+          <a href="https://jiayuanm.com/">Jiayuan Mao</a><sup>3</sup>,
+        </span>
+        <span class="author-block">
+          <a href="https://ichnow.ski/">Jeffrey Ichnowski</a><sup>1</sup>.
+        </span>
+      </div>
+      <div class="is-size-3 publication-authors">
+        <span class="author-block"><sup>1</sup>CMU</span>
+        <span class="author-block"><sup>2</sup>University of Maryland</span>
+        <span class="author-block"><sup>3</sup>Amazon FAR</span>
       </div>
     </div>
   </div>
-</section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
-        <div class="publication-video">
-          <video id="publication-video" controls height="100%">
-            <source src="./static/videos/freecompress-demo-v2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <p>
-          An introduction video. Audio will be played when the video is played.
-        </p>
-      </div>
-    </div>
-    <!--/ Paper video. -->
+  <!-- Hero footer: will stick at the bottom -->
+  <div class="hero-foot is-hidden-mobile">
+    <nav class="tabs is-boxed is-fullwidth is-size-5">
+      <ul>
+        <li><a href="#intro">Abstract</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#pipeline">Pipline</a></li>
+        <li><a href="#sr">Success Rate</a></li>
+        <li><a href="#excase">Extreme Case</a></li>
+        <li><a href="#realexp">Real-World Experiment</a></li>
+      </ul>
+    </nav>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="intro">
   <div class="container is-max-desktop">
 
     <!-- Abstract. -->
@@ -206,7 +193,27 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="video">
+  <div class="container is-max-desktop">
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="publication-video">
+          <video id="publication-video" controls height="100%">
+            <source src="./static/videos/freecompress-demo-v2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <p>
+          An introduction video. Audio will be played when the video is played.
+        </p>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<section class="section" id="pipeline">
   <div class="container is-max-desktop">
     <!-- Cover figure. -->
     <div class="columns is-centered has-text-centered">
@@ -230,7 +237,7 @@
 </section>
 
 
-<section class="hero is-light is-small">
+<section class="hero is-light is-small" id="sr">
   <div class="hero-body">
     <h2 class="title is-3">Success Rate Comparison</h2>
     <div class="content has-text-justified">
@@ -277,7 +284,7 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="excase">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
     <!-- Animation. -->
@@ -314,20 +321,18 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="realexp">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
     <!-- Real robot experiment. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Real World Experiments</h2>
-        <div class="content has-text-justified">
-          <p>
-            On the LEAP Hand, our method achieved an average success rate 
-            of 87.5% across 40 trials, while on the ShadowHand it achieved 
-            an average success rate of 85.0%. 
-          </p>
-        </div>
+        <p>
+          On the LEAP Hand, our method achieved an average success rate 
+          of 87.5% across 40 trials, while on the ShadowHand it achieved 
+          an average success rate of 85.0%. 
+        </p>
         <div class="hero-body">
           <video id="real-robot-experiment" autoplay muted loop playsinline height="100%">
             <source src="./static/videos/real-robot-experiment.mp4"
